@@ -20,10 +20,11 @@
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="jquery.js"></script>
     <!-- endbuild -->
     
   </head>
-  <body id="mybackground-color">
+  <body id="mybackground-color" onload="init()">
       <div class="jumbotron, myjumbotron-css">
         <div class="row" >
           <div class="row">
@@ -38,13 +39,34 @@
       </div>
 
   <div class="row">
-    <div class="col-xs-6 col-md-4"><center><a href="gamedevelopment.html" class="myButton">Game Development</a></center></div>
-    <div class="col-xs-6 col-md-4"><center><a href="mobiledevelopment.html" class="myButton">Mobile Development</a></center></div>
-    <div class="col-xs-6 col-md-4"><center><a href="webdevelopment.html" class="myButton">Web Development</a></center></div>
+    <div class="col-xs-6 col-md-4"><center><button class="myButton" id="game_button">Game Development</button></center></div>
+    <div class="col-xs-6 col-md-4"><center><button class="myButton" id="mobile_button">Mobile Development</button></center></div>
+    <div class="col-xs-6 col-md-4"><center><button type="button" class="myButton" id="web_button">Web Development</button></center></div>
   </div>
 
+          <div id="web">
+            <br>
+            <center><h2>Utilized HTML5, CSS3, Javascript and PHP to create various websites,<br>
+                This site was scaffolded using yeoman and included the bootstrap framework</h2>
+            </center>
+          </div>
+          
+          <div id="game">
+            <br>
+            <center><h2>Designed and implemented games using Java</h2>
+            </center>
+          </div>
+          
+          <div id="mobile">
+            <br>
+            <center>
+            <h2>Built apps for android using android studio</h2>
+            </center>
+          </div>
+          
+
 <br><br><br><br><br><br>
-      <div class="footer">
+      <div class="footer" id="myfooter">
         <a href="https://github.com/anandramadhin">My Github profile</a>
       </div>
     </div>
